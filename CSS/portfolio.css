@@ -1,1 +1,24 @@
- 
+body {
+    position: relative;
+}
+
+#intro {
+    padding-top: 50px;
+    height: 500px;
+    color: aliceblue;
+    background-color: black
+}
+
+#images {
+    padding-top: 50px;
+    height: 500px;
+    color: aliceblue;
+    background-color: aqua;
+}
+
+#contact {
+    padding-top: 50px;
+    height: 500px;
+    color: aliceblue;
+    background-color: black;
+}
