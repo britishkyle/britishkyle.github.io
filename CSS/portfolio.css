@@ -1,24 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+well {
+    background-color: aqua
+}
+
+html,
 body {
+    background-color: black;
     position: relative;
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 }
 
 #intro {
     padding-top: 50px;
-    height: 500px;
+    height: 100%;
+    height: 100vh;
+    background-image: url("https://pixabay.com/static/uploads/photo/2016/03/24/13/44/coffee-1276776_960_720.jpg");
+    background-size: cover;
+}
+
+.intro-content {
+    text-align: center;
     color: aliceblue;
-    background-color: black
+    text-shadow: 2px 2px black;
+}
+
+#about-me {
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
 }
 
 #images {
     padding-top: 50px;
-    height: 500px;
+    height: 100%;
+    height: 100vh;
     color: aliceblue;
     background-color: aqua;
+    background-image: url(https://pixabay.com/static/uploads/photo/2015/09/23/20/51/graphics-954343_960_720.jpg);
+    background-size: cover;
 }
 
 #contact {
     padding-top: 50px;
-    height: 500px;
+    height: 100%;
+    height: 20vh;
     color: aliceblue;
-    background-color: black;
+    background-image: url(http://cdn.pcwallart.com/images/gradient-wallpaper-1.jpg);
+    background-size: cover;
+}
+
+#contact > h1 {
+    text-align: center;
+    margin-top: -3%;
+}
+
+#kyle {
+    margin-top: 2%;
+    width: 25%;
+    border-radius: 50%;
+    content: url("https://scontent.ford1-1.fna.fbcdn.net/v/t1.0-9/12189080_10153810406935625_4879580187600595105_n.jpg?oh=5de50cf4afcc1eddd18135db56dd7f50&oe=57F06222");
+}
+
+#photos {
+    /* Prevent vertical gaps */
+    line-height: 0;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 5;
+    -moz-column-gap: 0px;
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+    -webkit-column-gap: 0px;
+    -moz-column-gap: 0px;
+    column-gap: 0px;
+}
+
+#photos img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+}
+
+#github-ico > a > div {
+    color: black;
+}
+
+#fcc-ico > a > div {
+    color: green;
+}
+
+#contact > div > div > a > div > i {
+    line-height: inherit;
+    font-size: 40px;
+}
+
+@media (max-width: 1200px) {
+    #photos {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media (max-width: 1000px) {
+    #photos {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    #photos {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    #photos {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
 }
